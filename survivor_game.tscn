@@ -8,7 +8,11 @@
 z_as_relative = false
 y_sort_enabled = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -30
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+z_index = -30
 offset_right = 1920.0
 offset_bottom = 1079.0
 
@@ -39,5 +43,14 @@ position = Vector2(317, 343)
 [node name="StaticBody2D8" parent="." instance=ExtResource("2_8id3q")]
 position = Vector2(920, 939)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_kbdm8")]
-position = Vector2(946, 275)
+[node name="Mob" parent="." instance=ExtResource("3_kbdm8")]
+position = Vector2(587, 902)
+
+[node name="Mob2" parent="." instance=ExtResource("3_kbdm8")]
+position = Vector2(633, 485)
+
+[node name="Mob3" parent="." instance=ExtResource("3_kbdm8")]
+position = Vector2(1043, 204)
+
+[node name="Mob4" parent="." instance=ExtResource("3_kbdm8")]
+position = Vector2(1512, 605)
